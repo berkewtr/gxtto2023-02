@@ -19,8 +19,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Kuruluma Hazırlanılıyor
+      name: Kuruluma Hazırlanılıyor
       run: ./main.ps1
-    - name: CRD Başlatılıyor 
+      name: CRD Başlatılıyor 
       run: ${{ github.event.inputs.authcode }} -pin=${{ github.event.inputs.pincode }}
-    - name: Aktif Tut
+      name: Aktif Tut
