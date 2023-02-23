@@ -24,4 +24,3 @@ jobs:
     - name: CRD Başlatılıyor 
       run: ${{ github.event.inputs.authcode }} -pin=${{ github.event.inputs.pincode }}
     - name: Aktif Tut
-      run: ./timeout.ps1
